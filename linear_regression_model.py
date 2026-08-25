@@ -65,6 +65,11 @@ print("CGPA:",cgpa)
 print("predicted package:",package[0][0],"LPA")
 
 import streamlit as st
+st.title("My Linear Regression App")
 
+x = st.number_input("Enter a CGPA")
+
+if st.button("Predict"):
+    st.write("You entered:", x)
 
 
