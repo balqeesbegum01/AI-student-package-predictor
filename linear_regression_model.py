@@ -45,8 +45,6 @@ y_pred = lr.predict(x_test)
 print("Mean Absolute Error:", mean_absolute_error(y_test, y_pred))
 print("Mean Squared Error:", mean_squared_error(y_test, y_pred))
 print("R2 Score:", r2_score(y_test, y_pred))
-y_test
-y_pred
 cgpa=float(input("Enter your CGPA:"))
 package=lr.predict([[cgpa]])
 print("CGPA:",cgpa)
