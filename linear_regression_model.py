@@ -9,7 +9,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model   import LinearRegression
 #loading data
-data=pd.read_csv("C:\\Users\\KLECBKP\\Desktop\\cgpa.csv")
+data=pd.read_csv("cgpa.csv")
 print(data)
 #check null
 print(data.isnull().sum())
