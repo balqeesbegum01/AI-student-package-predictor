@@ -42,7 +42,7 @@ if st.button("Predict package"):
         if cgpa < 0 or cgpa > 10:
             st.error("Please enter a valid CGPA between 0 and 10.")
         else:
-            prediction=Model.predict(np.array([[cgpa]]))
+            prediction=lr.predict(np.array([[cgpa]]))
             st.success(f" Predicted Package : {prediction[0][0]:.2f} LPA")
     except ValueError:
         st.error("Please enter a valid number for CGPA.")
