@@ -43,8 +43,6 @@ if st.button("Predict package"):
             st.error("Please enter a valid CGPA between 0 and 10.")
         else:
             prediction=Model.predict(np.array([[cgpa]]))
-            st.success(f" Predicted Salary Package : {prediction[0][0]:.2f} LPA")
+            st.success(f" Predicted Package : {prediction[0][0]:.2f} LPA")
     except ValueError:
         st.error("Please enter a valid number for CGPA.")
-
-print (data[['CGPA','Salary (INR LPA)']].corr())
