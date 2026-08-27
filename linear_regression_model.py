@@ -47,4 +47,4 @@ if st.button("Predict package"):
     except ValueError:
         st.error("Please enter a valid number for CGPA.")
 
-print (Data[['CGPA','Salary (INR LPA)']].corr())
+print (data[['CGPA','Salary (INR LPA)']].corr())
