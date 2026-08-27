@@ -35,11 +35,6 @@ trainaccuracy=lr.score(x_train,y_train)
 testaccuracy=lr.score(x_test,y_test)
 print(trainaccuracy)
 print(testaccuracy)
-cgpa=float(input("Enter your CGPA:"))
-package=lr.predict([[cgpa]])
-print("CGPA:",cgpa)
-print("predicted package:",package[0][0],"LPA")
-import streamlit as st
 cgpa = st.text_input("ENTER YOUR CGPA")
 if st.button("Predict package"):
     try:
